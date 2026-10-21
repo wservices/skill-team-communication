@@ -1,0 +1,9 @@
+include:
+  - project: 'agents/platform'
+    ref: v0.1.2
+    file: '/ci/skill-ci.gitlab-ci.yml'
+
+# team-communication keeps skills under skills/ (default SKILLS_PATH) and ships
+# tests/. The included template runs: skill-metadata, repo-structure, yaml/shell/
+# python lint, secret-scan, and the stdlib+PyYAML pytest suite. No container
+# build and no network: the scripts are offline, content-only artifact tooling.

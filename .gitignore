@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+# Secrets & local env
+.env
+*.pem
+*.key
+id_*
+# Case / message artifacts (never commit real handoffs or evidence)
+cases/
+evidence/
+handoff.yaml
+handoff.md
+*.handoff.yaml
+messages/
+# OS
+.DS_Store
